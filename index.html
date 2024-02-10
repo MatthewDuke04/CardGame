@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser-arcade-physics.min.js"></script>
+    <script src="Playing.js"></script>
+    <script src="StartMenu.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="IconFolder/Icon.png">
+</head>
+<body>
+    <title>
+        Forest Of Ruin
+    </title>
+    <script>
+    const config = {
+    
+    type: Phaser.AUTO,
+    width: 1920,
+    height: 1080,
+    backgroundColor: '#808080',
+    scene: [StartMenu,Playing,DeckEditor1]
+};
+
+
+const game = new Phaser.Game(config);
+    </script>
+
+</body>
+</html>
